@@ -30,15 +30,17 @@ Suche durch und ruft Gemini 2.0 Flash zur Antwortgenerierung auf.
 
 ## Tech-Stack
 
-| Komponente         | Technologie                              |
-|--------------------|------------------------------------------|
-| LLM                | Gemini 2.0 Flash (Google AI Studio)      |
-| Embeddings         | Gemini text-embedding-004                |
-| Vektorsearch       | NumPy Cosine Similarity                  |
-| Backend            | Python + Flask (Vercel Serverless)       |
-| Frontend           | Vanilla HTML/CSS/JS + Showdown.js        |
-| Hosting            | Vercel (kostenlos)                       |
-| CI/CD              | GitHub → Vercel Auto-Deploy              |
+
+| Komponente   | Technologie                         |
+| ------------ | ----------------------------------- |
+| LLM          | Gemini 2.0 Flash (Google AI Studio) |
+| Embeddings   | Gemini text-embedding-004           |
+| Vektorsearch | NumPy Cosine Similarity             |
+| Backend      | Python + Flask (Vercel Serverless)  |
+| Frontend     | Vanilla HTML/CSS/JS + Showdown.js   |
+| Hosting      | Vercel (kostenlos)                  |
+| CI/CD        | GitHub → Vercel Auto-Deploy         |
+
 
 ---
 
@@ -101,10 +103,12 @@ git push
 
 ## Kosten
 
-| Ressource                | Free Tier                          |
-|--------------------------|------------------------------------|
-| Gemini 2.0 Flash         | 1.000.000 Tokens/Tag               |
-| text-embedding-004       | 1.500 Requests/Tag                 |
-| Vercel Hosting           | Kostenlos (100GB Bandwidth/Monat)  |
+
+| Ressource          | Free Tier                         |
+| ------------------ | --------------------------------- |
+| Gemini 2.0 Flash   | 1.000.000 Tokens/Tag              |
+| text-embedding-004 | 1.500 Requests/Tag                |
+| Vercel Hosting     | Kostenlos (100GB Bandwidth/Monat) |
+
 
 Für ein Portfolio-Projekt: **faktisch kostenlos** 🎉
