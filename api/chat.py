@@ -55,7 +55,7 @@ _CHUNKS, _EMBEDDING_MATRIX = _load_index()
 
 # ── Konfiguration ─────────────────────────────────────────────────────────────
 EMBED_MODEL    = "gemini-embedding-001"
-GENERATE_MODEL = "gemini-2.0-flash"
+GENERATE_MODEL = "gemini-2.5-flash"
 TOP_K          = 3
 MAX_MSG_LEN    = 1000
 

@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "PowerShell(Get-ChildItem *)",
-      "PowerShell(\\(Get-ChildItem -Path \"C:\\\\Users\\\\Mustafa Turhal\\\\OneDrive\\\\Dokumente\\\\ChatBot\" -Force\\) | Format-List FullName, PSIsContainer, Mode)"
+      "PowerShell(\\(Get-ChildItem -Path \"C:\\\\Users\\\\Mustafa Turhal\\\\OneDrive\\\\Dokumente\\\\ChatBot\" -Force\\) | Format-List FullName, PSIsContainer, Mode)",
+      "PowerShell(Invoke-RestMethod -Uri \"http://127.0.0.1:8000/api/chat\" -Method POST -ContentType \"application/json\" -Body '{\"message\": \"Welche Programmiersprachen beherrscht Mustafa?\"}')"
     ]
   }
 }
