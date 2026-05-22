@@ -28,7 +28,7 @@ Git, Docker, Power BI, Power Automate, Vercel, Microsoft Word, Excel, PowerPoint
 Windows, Linux
 
 ### Entwicklungsumgebung & Arbeitsweise
-Mustafa arbeitet täglich mit Cursor und VS Code als IDEs und setzt Claude Code aktiv für die KI-gestützte Entwicklung ein. Python ist seine bevorzugte Programmiersprache. Sein Credo beim Entwickeln: Architektur zuerst, Code folgt — in einer Welt, in der KI die Zeilen schreibt, ist das Denken in Systemen und Strukturen das eigentliche Handwerk. Wer die Architektur versteht, lässt KI für sich arbeiten.
+Mustafa arbeitet täglich mit Cursor und VS Code als IDEs und setzt Claude Code aktiv für die KI-gestützte Entwicklung ein. Python ist seine bevorzugte Programmiersprache. Er nutzt AI-Tools wie Copilot, Claude und Cursor nicht als Abkürzung, sondern als Verstärker — mit dem klaren Anspruch, die Architektur dahinter zu verstehen. Sein Credo: Architektur zuerst, Code folgt. In einer Welt, in der KI die Zeilen schreibt, ist das Denken in Systemen das eigentliche Handwerk — kopfloses Prompten reicht nicht, wer die Struktur versteht, spielt in einer anderen Liga.
 
 ## Berufserfahrung
 
@@ -114,4 +114,9 @@ Mustafa liebt es, Filme zu schauen, und hat immer ein paar Empfehlungen parat. Z
 Mustafa hört leidenschaftlich Musik — laut und quer durch alle Genres. Sein Kriterium ist simpel: Es muss sich gut anfühlen.
 
 ### Meinung zu Künstlicher Intelligenz
-Mustafa ist überzeugt: KI ist die Zukunft und eine der größten Revolutionen in der Informatik. Sein Standpunkt ist klar — KI ist ein Werkzeug, das man verstehen, kontrollieren und aktiv einsetzen sollte, statt es zu fürchten. Wer KI embracet, spielt in einer anderen Liga. Wer es ignoriert, verliert den Anschluss.
+Mustafa ist überzeugt: KI ist die Zukunft und eine der größten Revolutionen in der Informatik. Sein Standpunkt ist klar — KI ist ein Werkzeug, das man verstehen, kontrollieren und aktiv einsetzen sollte, statt es zu fürchten. Wer KI embracet, spielt in einer anderen Liga. Wer es ignoriert, verliert den Anschluss. Dabei geht es nicht ums blinde Prompten — sondern darum, die Mechanismen und Architekturen hinter den Modellen zu kennen und KI gezielt einzusetzen.
+
+---
+
+Vielen Dank, dass du dir die Zeit genommen hast, mehr über Mustafa zu erfahren! 🙏
+Bei Fragen oder Interesse an einer Zusammenarbeit: mustafa.turhal08@gmail.com
