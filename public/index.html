@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mustafa Turhal — Portfolio Assistent</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Markdown-Rendering (kein Build-Step nötig) -->
+  <script src="https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js"></script>
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <!-- ── Header ─────────────────────────────────────────────────────────── -->
+    <header class="site-header">
+      <div class="header-left">
+        <div class="avatar">MT</div>
+        <div class="header-text">
+          <h1>Mustafa Turhal</h1>
+          <p class="subtitle">AI Engineer &amp; Full-Stack Developer</p>
+        </div>
+      </div>
+      <a
+        href="https://github.com/mustafatur46/portfolio-chatbot"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="github-link"
+        title="Quellcode auf GitHub ansehen"
+      >
+        View on GitHub ↗
+      </a>
+    </header>
+
+    <!-- ── Suggestion Chips ───────────────────────────────────────────────── -->
+    <div class="suggestions" id="suggestions">
+      <p class="suggestions-label">Zum Beispiel:</p>
+      <div class="chips">
+        <button class="chip" data-q="Wofür bewirbst du dich gerade und was suchst du dir als nächste Rolle aus?">
+          🎯 Wofür bewirbst du dich?
+        </button>
+        <button class="chip" data-q="Was war dein schulischer und beruflicher Werdegang?">
+          🎓 Dein Werdegang
+        </button>
+        <button class="chip" data-q="Welche Technologien und Programmiersprachen beherrschst du?">
+          💻 Tech-Stack
+        </button>
+        <button class="chip" data-q="Was für eine Stelle suchst du gerade?">
+          🔍 Was suchst du?
+        </button>
+      </div>
+    </div>
+
+    <!-- ── Chat-Fenster ───────────────────────────────────────────────────── -->
+    <main class="chat-window" id="chatWindow" role="log" aria-live="polite">
+      <div class="message assistant">
+        <div class="bubble">
+          👋 Hi! Ich bin Mustafas Portfolio-Assistent. Stell mir eine Frage über seinen
+          Werdegang, seine Projekte oder Skills — ich beantworte alles rund um Mustafa!
+        </div>
+      </div>
+    </main>
+
+    <!-- ── Eingabeleiste ──────────────────────────────────────────────────── -->
+    <footer class="input-bar">
+      <textarea
+        id="inputField"
+        placeholder="Frag mich über Mustafa..."
+        rows="1"
+        maxlength="1000"
+        aria-label="Nachricht eingeben"
+      ></textarea>
+      <button id="sendBtn" aria-label="Senden">
+        Senden
+      </button>
+    </footer>
+
+    <!-- ── Branding-Hinweis ───────────────────────────────────────────────── -->
+    <p class="branding-note">
+      Powered by Gemini 2.0 Flash &middot; RAG-Pipeline &middot; Numpy Vektorsearch
+      &middot; gebaut von Mustafa als Portfolio-Projekt
+    </p>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

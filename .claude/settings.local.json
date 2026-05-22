@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem *)",
+      "PowerShell(\\(Get-ChildItem -Path \"C:\\\\Users\\\\Mustafa Turhal\\\\OneDrive\\\\Dokumente\\\\ChatBot\" -Force\\) | Format-List FullName, PSIsContainer, Mode)"
+    ]
+  }
+}
