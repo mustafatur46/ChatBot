@@ -8,7 +8,7 @@ Mustafa Turhal ist ein Software-Entwickler und AI-Enthusiast aus Haibach (Bayern
 - Telefon: +49 151 7057 8122
 - Adresse: Haibach, 63808 Deutschland
 - GitHub: github.com/mustafatur46
-- LinkedIn: linkedin.com/in/[LINKEDIN_HANDLE]
+- LinkedIn: linkedin.com/in/mustafa-turhal-9963ba26a/
 
 ## Technische Skills
 
@@ -28,7 +28,7 @@ Git, Docker, Power BI, Power Automate, Vercel, Microsoft Word, Excel, PowerPoint
 Windows, Linux
 
 ### Entwicklungsumgebung & Arbeitsweise
-Mustafa arbeitet täglich mit Cursor und VS Code als IDEs und setzt Claude Code aktiv für die KI-gestützte Entwicklung ein. Python ist seine bevorzugte Programmiersprache. Er nutzt AI-Tools wie Copilot, Claude und Cursor nicht als Abkürzung, sondern als Verstärker — mit dem klaren Anspruch, die Architektur dahinter zu verstehen. Sein Credo: Architektur zuerst, Code folgt. In einer Welt, in der KI die Zeilen schreibt, ist das Denken in Systemen das eigentliche Handwerk — kopfloses Prompten reicht nicht, wer die Struktur versteht, spielt in einer anderen Liga.
+Mustafa arbeitet täglich mit Cursor und VS Code und setzt Claude Code aktiv ein. Er ist ein überzeugter Befürworter von AI Pair Programming und AI-augmented Development — nicht als Hype, sondern als echte Arbeitsweise. KI-Tools wie Claude, Cursor und Copilot sind für ihn fester Bestandteil des Entwicklungsprozesses, kein Gimmick. Dabei gilt: Architektur zuerst, Code folgt. Wer nur blind promptet, versteht das System nicht — wer die Architektur durchdenkt und KI als Verstärker einsetzt, arbeitet in einer anderen Liga. Python ist seine bevorzugte Sprache.
 
 ## Berufserfahrung
 
@@ -97,7 +97,7 @@ Mustafa hat sein Abitur am Hanns-Seidel-Gymnasium in Hösbach, Bayern, abgelegt.
 - Türkisch: B2 — Gute Kenntnisse
 
 ## Was ich suche
-Mustafa sucht eine Rolle im Bereich AI-augmented Development — am liebsten in einem Umfeld, das KI nicht skeptisch beäugt, sondern aktiv einsetzt. Er will Architekturen, Systeme und Anwendungen bauen, bei denen KI nicht Beiwerk ist, sondern integraler Bestandteil des Entwicklungsprozesses. Konkret interessieren ihn Positionen als AI Engineer, Software Engineer oder in der Produktentwicklung mit KI-Fokus — ob Werkstudentenstelle neben dem Master oder nach dem Abschluss als Vollzeitstelle. Er bringt Erfahrung aus der Industrie (Bühler Group, 3 Jahre), aus dem Startup-Bereich (Beautify, eigene Gründung) und aus der Forschung (Reinforcement Learning, Bachelorarbeit) mit.
+Mustafa sucht eine Rolle, in der AI-augmented Development und AI Pair Programming nicht nur toleriert, sondern aktiv gelebt werden. Er will in einem Team arbeiten, das KI als echtes Werkzeug einsetzt — nicht als Spielzeug und nicht als Bedrohung. Konkret: Positionen als AI Engineer, Software Engineer oder in der Produktentwicklung mit KI-Fokus, bei denen er Architekturen und Systeme mit KI aufbauen kann. Werkstudentenstelle neben dem Master oder Vollzeitstelle nach dem Abschluss. Er bringt Erfahrung aus der Industrie (Bühler Group, 3 Jahre), dem Startup-Bereich (Beautify, eigene Gründung) und der Forschung (Reinforcement Learning, Bachelorarbeit) mit.
 
 ## Persönlichkeit & Interessen
 

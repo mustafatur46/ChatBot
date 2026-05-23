@@ -1,89 +1,59 @@
-# 🤖 Portfolio Chatbot
+# Musti's Chatbot 🤖
 
-Ein RAG-basierter Chatbot, der Recruitern und Interviewern Fragen zu meinem Werdegang,
-Skills und Projekten beantwortet. Deployed auf Vercel.
+**Live:** [chat-bot-mustafa.vercel.app](https://chat-bot-mustafa.vercel.app)
 
-**Live:** [https://DEIN-PROJEKT.vercel.app](https://DEIN-PROJEKT.vercel.app)
+Ein persönlicher Portfolio-Chatbot, den ich gebaut habe, damit Recruiter und Interessierte mich und meinen Werdegang besser kennenlernen können — ohne dass ich bei jedem Gespräch von vorne anfangen muss. Der Chatbot beantwortet Fragen zu meinen Projekten, Skills und meiner Erfahrung.
+
+Technisch gesehen ist es ein RAG-System (Retrieval-Augmented Generation): mein Profil wird in Chunks aufgeteilt, als Embeddings gespeichert, und bei jeder Frage werden die relevantesten Abschnitte rausgezogen und an Gemini weitergegeben. Kein Finetuning, kein Datenbankserver — einfach eine JSON-Datei und etwas Numpy.
 
 ---
 
-## Wie es funktioniert
+## Wie's funktioniert
 
 ```
-User-Frage
-  → Gemini text-embedding-004 (RETRIEVAL_QUERY)
-  → Cosine Similarity vs. data/embeddings.json (Numpy)
-  → Top-3 relevante Chunks
-  → Gemini 2.0 Flash (RAG-Prompt mit Kontext)
+Deine Frage
+  → wird zu einem Vektor (Gemini Embedding)
+  → Cosine Similarity gegen alle gespeicherten Profil-Chunks
+  → Top 3 relevanteste Abschnitte
+  → Gemini 2.5 Flash bekommt: System Prompt + Kontext + deine Frage
   → Antwort
 ```
 
-**Offline (einmalig lokal):** `scripts/build_index.py` liest `data/profile.md`,
-teilt den Text in Chunks auf und generiert Embeddings via Gemini API → speichert
-alles in `data/embeddings.json`.
-
-**Online (pro Request):** `api/chat.py` (Vercel Serverless Function) lädt die
-Embeddings beim Cold Start, bettet die User-Frage ein, führt eine Cosine-Similarity-
-Suche durch und ruft Gemini 2.0 Flash zur Antwortgenerierung auf.
+Das Embeddings-File (`data/embeddings.json`) wird lokal gebaut und ins Repo committed. Vercel liest es beim Start — kein Datenbankserver, keine laufenden Kosten, keine Komplexität.
 
 ---
 
 ## Tech-Stack
 
-
-| Komponente   | Technologie                         |
-| ------------ | ----------------------------------- |
-| LLM          | Gemini 2.0 Flash (Google AI Studio) |
-| Embeddings   | Gemini text-embedding-004           |
-| Vektorsearch | NumPy Cosine Similarity             |
-| Backend      | Python + Flask (Vercel Serverless)  |
-| Frontend     | Vanilla HTML/CSS/JS + Showdown.js   |
-| Hosting      | Vercel (kostenlos)                  |
-| CI/CD        | GitHub → Vercel Auto-Deploy         |
-
+| Komponente   | Technologie                          |
+|--------------|--------------------------------------|
+| LLM          | Gemini 2.5 Flash (Google AI Studio)  |
+| Embeddings   | Gemini Embedding 001                 |
+| Vektorsearch | NumPy Cosine Similarity              |
+| Backend      | Python + Flask (Vercel Serverless)   |
+| Frontend     | Vanilla HTML/CSS/JS + Showdown.js    |
+| Hosting      | Vercel Free Tier                     |
+| CI/CD        | GitHub → Vercel Auto-Deploy          |
 
 ---
 
-## Lokale Entwicklung
+## Lokal laufen lassen
 
 ```powershell
-# 1. Abhängigkeiten installieren
+# Repo klonen und venv erstellen
+python -m venv .venv
+.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 
-# 2. Gemini API Key setzen (kostenlos: https://aistudio.google.com/app/apikey)
-$env:GEMINI_API_KEY = "dein_key"
+# .env anlegen (siehe .env.example)
+# GEMINI_API_KEY=dein_key_von_aistudio.google.com
 
-# 3. data/profile.md mit deinen echten Daten befüllen
-
-# 4. Embedding-Index bauen
+# Embedding-Index bauen (einmalig, nach Änderungen an profile.md)
 python scripts/build_index.py
 
-# 5. API lokal starten
+# API starten
 python api/chat.py
 # → http://localhost:8000
-
-# 6. Frontend öffnen (in einem anderen Terminal)
-python -m http.server 3000 -d public
-# → http://localhost:3000
-# Hinweis: API_URL in app.js auf "http://localhost:8000/api/chat" ändern für lokalen Test
-```
-
----
-
-## Deployment auf Vercel
-
-```bash
-# 1. GitHub Repo erstellen und Code pushen (inkl. data/embeddings.json!)
-git init
-git add .
-git commit -m "Initial portfolio chatbot"
-git remote add origin https://github.com/DEIN_USERNAME/portfolio-chatbot.git
-git push -u origin main
-
-# 2. Vercel: https://vercel.com → "Add New Project" → Repo importieren
-#    - Framework Preset: "Other"
-#    - Environment Variable: GEMINI_API_KEY = dein_key
-#    → Deploy klicken
 ```
 
 ---
@@ -91,24 +61,22 @@ git push -u origin main
 ## Profil aktualisieren
 
 ```powershell
-# data/profile.md editieren, dann:
+# profile.md editieren, dann:
 python scripts/build_index.py
 git add data/profile.md data/embeddings.json
 git commit -m "Update profile"
 git push
-# → Vercel deployed automatisch in ~30 Sekunden
+# Vercel deployed automatisch
 ```
 
 ---
 
-## Kosten
+## Deployment
 
+Vercel → New Project → GitHub Repo importieren → Framework: **Other** → Environment Variable `GEMINI_API_KEY` setzen → Deploy.
 
-| Ressource          | Free Tier                         |
-| ------------------ | --------------------------------- |
-| Gemini 2.0 Flash   | 1.000.000 Tokens/Tag              |
-| text-embedding-004 | 1.500 Requests/Tag                |
-| Vercel Hosting     | Kostenlos (100GB Bandwidth/Monat) |
+Das war's. Kein Server, kein Setup, kein Aufwand.
 
+---
 
-Für ein Portfolio-Projekt: **faktisch kostenlos** 🎉
+Gebaut von [Mustafa Turhal](https://github.com/mustafatur46) — Feedback und Fragen gerne per Mail: mustafa.turhal08@gmail.com
