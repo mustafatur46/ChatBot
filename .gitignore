@@ -21,4 +21,7 @@ Thumbs.db
 # Vercel
 .vercel/
 
+# Source of Truth — enthält private Kontaktdaten, bleibt nur lokal
+data/profile.md
+
 # Hinweis: data/embeddings.json MUSS committed werden (Vercel braucht es zur Deploy-Zeit)
