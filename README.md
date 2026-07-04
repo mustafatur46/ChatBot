@@ -63,10 +63,11 @@ python api/chat.py
 ```powershell
 # profile.md editieren, dann:
 python scripts/build_index.py
-git add data/profile.md data/embeddings.json
+git add data/embeddings.json
 git commit -m "Update profile"
 git push
 # Vercel deployed automatisch
+# Hinweis: profile.md liegt nur lokal (private Kontaktdaten), nur embeddings.json wird committed
 ```
 
 ---
